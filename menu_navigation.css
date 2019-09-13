@@ -1,0 +1,67 @@
+/* Styles de mon premier menu de navigation */
+body{
+   /* background-color: #000;*/
+    width:99%;
+    /*color: white;*/
+}
+div{
+    width:80%;
+    margin: auto;
+   /* border:1px solid white;*/
+}
+nav{
+    width:99%;
+}
+nav ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    text-align: center;
+
+}
+nav ul li{
+    display:inline;
+    padding:15px 0;
+    margin:0;
+}
+nav ul li a{
+    display:inline-block;
+    padding:15px;
+    text-decoration: none; /* lien non souligné */
+}
+/* unvisited link */
+nav ul li a:link {
+    background-color: lightsteelblue;
+    color: white;
+}
+
+/* visited link */
+nav ul li a:visited {
+    background-color: lightsteelblue;
+    color: white;
+}
+
+/* mouse over link */
+nav ul li a:hover {
+    background-color: steelblue;
+    color: lightsteelblue;
+}
+
+/* selected link */
+nav ul li a:active {
+    background-color: steelblue;
+    color: lightsteelblue;
+}
+
+
+@media screen and (max-width: 970px){
+    div, nav ul {
+       width:99%;
+    }
+}
+
+@media screen and (max-width: 690px){
+    nav ul li a{
+        display:block;
+    }
+}

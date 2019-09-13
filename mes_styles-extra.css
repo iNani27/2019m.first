@@ -1,0 +1,42 @@
+/*
+
+*/
+/* 
+    Created on : 06-août-2019, 16:08:45
+    Author     : µ
+*/
+p{
+    color: blue;
+}
+h2{
+    background-color: blue;
+    color: white; 
+}
+img{
+    border-style: solid;
+    border-color: orange;
+    border-width: 15px;
+
+}
+/* Jérôme centrer l'image '*/
+/*p.centre{
+    width: 200px;
+    margin: auto;
+        
+}*/
+/* Giovanni couleur de fond*/
+body{
+    /* background-color: #8BC2C2; */
+
+   /* background-image: url("https://cdn.pixabay.com/photo/2016/10/23/11/29/background-1762731_960_720.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;*/
+
+}
+/* Jérôme supprimer les puces de la liste  */
+ul{
+    list-style-type: none;
+}
+
+

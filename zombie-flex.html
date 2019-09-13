@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--
+        /*
+        ? flex-wrap; flex-flow =  flex-direction et flex-wrap .
+display: flex;
+flex-direction: ;
+justify-content : ;
+align-items: ;
+align-self: ; /* flex-item = enfant */
+flex-grow : ;  /* flex-item = enfant */
+
+crossbow {
+  display: flex;
+  flex-direction : row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.target:nth-child(3) {
+  align-self: flex-end;
+}
+*/
+
+
+/* *
+crossbow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.target:nth-of-type(2) {
+  align-self: flex-start;
+}
+.target:nth-of-type(4) {
+  align-self: flex-start;
+}*/
+
+/*
+
+flex-grow : 2;
+crossbow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.target:nth-of-type(1){
+    flex-grow: 1;
+}
+
+.target:nth-of-type(2){
+  flex-grow: 2;
+}
+*/
+
+
+/*
+crossbow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.target{
+  flex-grow: 1;
+}
+
+.target:nth-of-type(2){
+flex-grow: 0;
+
+}
+
+
+ If anything is growing you don't need to worry about justify-content. 
+ 
+ crossbow {
+  display : flex;
+    align-items: flex-end;
+}
+
+.target.goo{
+  flex-grow: 2;
+}
+
+.target.female{
+   align-self: flex-start;
+}
+
+
+ 
+ */
+-->
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Flex-box support - Zombies</title>
+        <meta name='viewport' content='width=device-width; initial-scale=1.0;'>
+        <style>
+            #crossbow {
+                display: flex;
+                width : 200px;
+                height: 200px;
+                border: 1px solid red;
+                margin: auto;
+                flex-direction: column-reverse;
+                justify-content : flex-start;
+                align-items: flex-end;
+            }
+            .crossbow {
+                width : 50px;
+                height: 50px;
+                background-color: blue;
+                border: 1px solid white;
+            }
+
+            #crossbow2 {
+                width : 120px;
+                height: 200px;
+                border: 1px solid purple;
+                margin: auto;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            .crossbow2 {
+                width : 50px;
+                height: 50px;
+                background-color: green;
+                border: 1px solid white;
+                margin:2px;
+            }
+            .crossbow2:nth-of-type(1){
+               align-self: stretch;
+            }
+            .crossbow2:nth-of-type(2){
+                flex-grow:1;
+                /*max-height: 100px;*/
+            }
+            
+            /*5.3*/
+          /*  crossbow{
+  display:flex;
+  flex-direction : row-reverse;
+  align-items: center;
+}
+
+.target.goo{
+flex-grow:1;
+
+}
+
+.target:nth-of-type(1){
+flex-grow:2;
+align-items: flex-end;
+}*/
+        </style>
+    </head>
+    <body>
+        <div id='crossbow'>
+            <div class='crossbow'>
+
+            </div>
+            <div class='crossbow'>
+
+            </div>
+        </div>
+
+        <div id='crossbow2'>
+            <div class='crossbow2'>
+
+            </div>
+            <div class='crossbow2'>
+
+            </div>
+        </div>
+
+        <img src="flex-zombies-5.2-grow-stretch.png" alt="challenge 5.2 on https://mastery.games/courses/139425/lectures/2669675" style="width: 40%; float:left;"/>
+
+
+        <pre style="font-size: 1.7em;">
+            crossbow{
+            display:flex;
+            flex-direction: column;
+            align-items: flex-end;
+            }
+
+            .target:nth-of-type(1){
+            align-self: stretch;
+
+            }
+
+            .target:nth-of-type(2){
+            flex-grow:1;
+            }
+        </pre>
+
+    </body>
+</html>
+

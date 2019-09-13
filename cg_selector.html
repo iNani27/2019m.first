@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Isabelle NANI - Le Web à portée de tous</title>
+        <meta name="description" content="Isabelle NANI - codeuse passionnée, férue d'art, généreuse par nature, je partage avec plaisir mon savoir. Attentive et analytique, je suis curieuse de tout et de chacun : j'aime comprendre comment fonctionnent les choses. Positive et rêveuse - un brin utopiste -, j'aime prendre le temps d'écouter et d'observer les autres pour trouver le moyen de rendre chacun plus heureux. ">
+        <meta name="keywords" content="HTML, CV, IT">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="NANI Isabelle">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="menu.css" rel="stylesheet" type="text/css"/>
+        <script src="menu.js" type="text/javascript"></script>
+        <style>
+
+            /* Styles pour les énoncés */
+            /* mise en forme du texte */
+            header, pre{
+                font-size: 1vw;
+                color: slategray;
+            }
+            /* mise en forme décorative de la solution à l'exercice' */
+            body > main{
+                border: 1px dotted darkcyan;
+                padding: 1em;
+            }
+            aside{
+                text-transform: capitalize;
+                font-variant: small-caps;
+                font-style: oblique;
+            }
+            /* FLEXBOX */
+            /* taille des blocs */
+            body > header, body > main{
+                width: 35%;
+            }
+            body > aside{
+                width: 15%;
+            }
+            /* Positionement des blocs */
+            body{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+
+            /* MEDIA QUERRIES styles différent selon taille d'écran '*/
+            @media screen and (max-width: 1024px) {
+                header, pre {
+                    font-size: 1.5vw;
+                    color: darkslategray;
+                    margin: 0.5em 0;
+                    padding: 0 0;
+                }
+                pre{
+                    margin: .5em 0 0 -60px;
+                }
+                ul{
+                    margin: 0 1em 0 -1.5em;
+                }
+                /* FLEXBOX */
+                /* taille des blocs */
+                body > header, body > main{
+                    width: 40%;
+                }
+                body > aside{
+                    width: 100%;
+                }
+                /* Positionement des blocs */
+                body{
+                    flex-wrap: wrap;
+                }
+
+            }
+            @media screen and (max-width: 768px) {
+                header, pre {
+                    font-size: 2.5vw;
+                    color: black;
+                    margin: 0 0;
+                    padding: 0 0;
+                }
+                pre{
+                    margin:1em 0 0 -80px;
+                }
+                ul{
+                    margin: 0 0;
+                    padding: 0 0;
+                }
+
+                /* FLEXBOX */
+                /* taille des blocs */
+                body > header, body > main{
+                    width: 100%;
+                }
+                body > aside{
+                    width: 100%;
+                }
+                /* Positionement des blocs */
+                body{
+                    flex-direction: column;
+                }
+            }
+
+
+
+
+
+            /* styles pour l'exercice CSS ici */
+            body{
+                font-family: helvetica;
+            }
+            h1{
+                text-align:center;
+                color : red;
+            }
+            h2{
+                text-decoration: underline;
+            }
+            article > h2{
+                color : blue;
+            }
+            section > h2{
+                color : green;
+            }
+            h2 + p{
+                color : red;
+                font-style: italic;
+            }
+            h1 ~ p{
+                color : violet;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <header>
+
+            <h3>CSS - base - 3/4 Les selecteurs </h3>
+            <em>
+                Source : 
+                <a href="https://www.codingame.com/playgrounds/36092/exercices-css/selecteurs" 
+                   title="CodeinGame - Résolution d'exercices - Les sélecteurs" 
+                   target="_blank">
+                    CSS - 3/4 - Exercice 2 (en ligne)
+                </a>
+                <br />
+            </em>
+            <strong>
+                <br />
+                En utilisant les sélecteurs réaliser les mises en forme suivantes :
+
+            </strong>
+
+            <ul>
+                <li> le corps du document doit être écrit en helvetica.
+                </li>
+                <li>
+                    les titres de niveau 1 doivent être centrés et écrits en rouge.
+                </li>
+                <li>
+                    tous les titres de niveau 2 doivent soulignés.
+                </li>
+                <li>
+                    les titres de niveau 2 dans les sections doivent être verts.
+                </li>
+                <li>
+                    les titres 2 de niveau dans les articles doivent être bleus.
+                </li>
+                <li>
+                    les paragraphes suivant directement un titre de niveeau 2 doivent être en rouge italique.
+                </li>
+                <li>
+                    les paragraphes suivant un titre de niveau 1 doivent être en violet.
+                </li>
+            </ul>
+            <pre>
+                &lt;h1>Mon Titre 1&lt;/h1>
+                &lt;p>Premier paragraphe&lt;/p>
+                &lt;p>Deuxième paragraphe&lt;/p>	
+                &lt;article>
+                    &lt;h2>Mon Titre 2&lt;/h2>
+                    &lt;p>Troisième paragraphe&lt;/p>
+                    &lt;p>Quatrième paragraphe&lt;/p>
+                    &lt;section>
+                        &lt;h2>Mon Titre 3&lt;/h2>
+                        &lt;p>Cinquième paragraphe&lt;/p>
+                        &lt;p>Sixième paragraphe&lt;/p>		
+                    &lt;/section>
+                &lt;/article>
+            </pre>
+        </header>
+        <main>
+            <h1>Mon Titre 1</h1>
+            <p>Premier paragraphe</p>
+            <p>Deuxième paragraphe</p>	
+            <article>
+                <h2>Mon Titre 2</h2>
+                <p>Troisième paragraphe</p>
+                <p>Quatrième paragraphe</p>
+                <section>
+                    <h2>Mon Titre 3</h2>
+                    <p>Cinquième paragraphe</p>
+                    <p>Sixième paragraphe</p>		
+                </section>
+            </article>
+        </main>
+        <aside>
+            <h1>Résolution d'exercices css de CodeInGame</h1>
+            <nav class="topnav" id="myTopnav">
+                <a href="cg_index.html">Accueil</a>
+                <a href="cg_selector.html" class="active">CSS - base - 3/4 Les selecteurs </a>
+                <a href="cg_selector-table.html">CSS - base - 4/4 Pseudo-classes  - Tableau </a>
+                <a href="cg_selector-form.html">CSS - base - 4/4 Pseudo-classes - Formulaire </a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+            <h3>Nous vous recommandons :</h3>
+            <p>Références  W3Schools sur <a href="https://www.w3schools.com/cssref/css_selectors.asp" title="" target="_blank">Les selecteurs</a>.</p>
+            <p>S'exercer encore sur <a href="https://flukeout.github.io/" title="CSS Diner" target="_blank">CSS Diner</a>.</p>
+            <p>
+                Mais aussi apprendre comment faire pour que la taille du texte s'adapte à la taille de l'écran : <a href="https://www.w3schools.com/howto/howto_css_responsive_text.asp" title="Learn how to create responsive typography with CSS." target="_blank">Responsive Text</a>.
+            </p>
+        </aside>
+
+    </body>
+</html>

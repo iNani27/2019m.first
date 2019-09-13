@@ -1,0 +1,322 @@
+mod�le DEMO
+Groupe initiation
+https://mobirise.com/website-templates/cv-website-template/
+
+GRoupe atelier
+https://mobirise.com/website-templates/mobile-website-template/
+https://mobirise.com/website-templates/portfolio-website-templates/
+
+test your page localhost on multiple device
+http://techsini.com/multi-mockup/index.php
+
+
+
+
+
+
+
+exemple : sticky Nav bar:
+https://www.cairn.info/revue-francaise-de-gestion-2012-7-page-137.htm?contenu=resume
+Hero img paralax effects & animations
+https://revolution.themepunch.com/wordpress-hero-image/
+
+
+
+GAME FLEX or GRID
+https://mastery.games/
++++++++++++++++++++++++++++++++++++++++
+
+
+
+Flex
+
+mobil first
+
+Video:EN
+++++++++++++++++++++++++++++++++++
+https://youtu.be/XsEnj-1hG2o
+niveau : d�butant
+Pure HTML5 CSS3
+one page photo nice and elegant
+s'adapte en hauteur
+animation bouton en hover : CSS transition
+jQuery : animation
+image change each refresh
+caption
+box shadow around everything
+
+Code on : https://codepen.io/bradtraversy/pen/mKdGzd
+boooooooooooof
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+flex : flex-basis vs width vs min-width
+https://gedd.ski/post/the-difference-between-width-and-flex-basis/
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+REsponsive NO MORE because ... http://wdfriday.com/wdfriday.com/blog/2012/03/css-et-mobile-first-proceder-par-amelioration-progressive/index.html 
+
+------------------------------------------------------------------------------------------------------
+
+
+///////////////////
+quizz - flex /////////////
+https://www.alsacreations.com/quiz/lire/23-CSS-Flexbox/////////
+///////////////////////////////////////////////////////////////
+
+
+TO READ - ok ----------------------------https://forum.alsacreations.comtopic-27-74606-1-approche-mobile-first.html/
+
+https://www.alsacreations.com/livres/lire/1786-css3-grid-layout-vous-allez-enfin-aimer-css.html
+https://www.alsacreations.com/tuto/lire/1790-Grid-Layout-et-positionnement-absolu.html
+
+
+? https://www.producthunt.com/posts/flexbox-ninja
+
+
+
+
+
+Animations : 
+https://www.apple.com/iphone-xs/
+
+
+menu d�roulant, responsive to test and adapt
+https://www.pierre-giraud.com/html-css/exercices-html-css/creation-menu-responsive-deroulant-html-css.php
+liste imbirqu�es
+
+
+
+centrer avec flexbox to do
+block >< inline
+
+COLONNES DE M�ME HAUTEUR avec flexbox - to do 
+
+
+
+
+Exercices (x)HTML5/CSS3? 
++++++++++++++++++++++https://toulibre.org/pub/2012-02-29-rencontre/presentation/exercices/index.php@nocrypt&solution.html
+
+https://www.eyrolles.com/Chapitres/9782212134001/Chap-2_Engels.pdf
+https://www.skeppshult-boutique.fr/media/extrait_html5_et_css3.pdf
+
+
+
+
+https://www.exelib.net/exercices/developpement-web/css/
+
+jquery ?
+https://fr.tuto.com/css/10-exercices-pratiques-pour-vous-ameliorer-en-jquery-css,76761.html
+
+
+s'exercer en ligne - yes 
+++++++++++++++++++++++++https://www.codingame.com/playgrounds/36092/exercices-css
+
+
+
+Tuto ?
++++++++++++++++++++++++++http://www.florianboudin.org/teaching/techweb/index.html
+
+Exo ? 
+http://www.info.univ-angers.fr/~gh/internet/solutions.php
+
+To read - tr�s bonne source - valid� !
++++++++++++++++++++++++++https://campusbruxelles.files.wordpress.com/2014/02/css_avancees.pdf +++++++++++ ongoing 27 (47/400) !
+
+
+To read - ? 
++++++++++
+https://zellwk.com/blog/how-to-write-mobile-first-css/
+https://www.neoptimal.com/blog/mobile-friendly-mobile-first-site-web
+https://www.anthedesign.fr/webdesign-2/mobile-first/
+https://www.journaldunet.com/ebusiness/expert/61029/mobile-first---une-nouvelle-facon-de-concevoir-un-projet-digital.shtml
+https://darwindigital.ch/choisir-strategie-responsive/
+
+
+
+
+-------------------- pas d'inter�t ----------------------------------------------------------------------------------------------------https://www.pearson.ch/download/media/9782744026195_EL.pdf
+
+To explore !
+https://examenscorriges.org/ssearch.php?id_search=3147
+
+
+
+
+
+CSS2
+la g�n�alogie, 
+la priorit�, 
+les pseudo-�l�ments, 
+les s�lecteurs avanc�s (attribut, adjacence, parent�), 
+la cr�ation de contenu, 
+les r�gles @ et 
+les microformats
+
+
+/**/ comment Css : usage informationnel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*****************************
+picsum liste image
+
+*********************************
+Appareil photo:
+https://picsum.photos/id/531/339/509
+https://picsum.photos/id/454/339/509
+https://picsum.photos/id/435/339/509
+https://picsum.photos/id/373/339/509
+https://picsum.photos/id/355/339/509
+https://picsum.photos/id/319/339/509
+https://picsum.photos/id/250/339/509
+https://picsum.photos/id/823/339/509 (perso color)
+https://picsum.photos/id/91/339/509 (n/b)
+
+
+Mongolfi�re
+https://picsum.photos/id/401/339/509
+https://picsum.photos/id/174/339/509 (gd)
+
+
+vert
+https://picsum.photos/id/530/339/509
+https://picsum.photos/id/306/339/509
+https://picsum.photos/id/82/339/509 (rose)
+https://picsum.photos/id/944/339/509
+https://picsum.photos/id/940/339/509
+
+
+cuisine
+https://picsum.photos/id/490/339/509 (terre)
+https://picsum.photos/id/835/339/509
+https://picsum.photos/id/635/339/509 (cuivre)
+https://picsum.photos/id/889/339/509 (framboise)
+
+mer 
+https://picsum.photos/id/700/339/509
+https://picsum.photos/id/716/339/509
+https://picsum.photos/id/875/339/509
+https://picsum.photos/id/870/339/509
+https://picsum.photos/id/999/339/509
+
+color/cuisine exotiq
+https://picsum.photos/id/686/339/509
+
+
+
+soleil jaune
+https://picsum.photos/id/525/339/509
+
+rouge
+https://picsum.photos/id/503/339/509
+
+mutli color
+https://picsum.photos/id/780/339/509
+
+
+Music
+https://picsum.photos/id/39/339/509
+https://picsum.photos/id/452/339/509 (foule)
+https://picsum.photos/id/157/339/509 (music et skate)
+https://picsum.photos/id/836/339/509 (guitare)
+
+ciel
+https://picsum.photos/id/38/339/509
+https://picsum.photos/id/583/339/509
+https://picsum.photos/id/741/339/509 (color)
+https://picsum.photos/id/685/339/509 (perso)
+https://picsum.photos/id/583/339/509
+
+
+ville
+https://picsum.photos/id/259/339/509
+https://picsum.photos/id/703/339/509
+https://picsum.photos/id/868/339/509
+https://picsum.photos/id/864/339/509
+https://picsum.photos/id/857/339/509 (color)
+https://picsum.photos/id/862/339/509
+
+lums
+https://picsum.photos/id/380/339/509
+https://picsum.photos/id/402/339/509
+https://picsum.photos/id/368/339/509
+
+
+
+old jaunie
+https://picsum.photos/id/111/339/509
+https://picsum.photos/id/90/339/509 (color)
+
+mobility
+https://picsum.photos/id/281/339/509 (skate)
+https://picsum.photos/id/904/339/509
+https://picsum.photos/id/157/339/509 (music et skate)
+https://picsum.photos/id/146/339/509 (tricycle lol)
+https://picsum.photos/id/859/339/509 (bike - brique - color)
+https://picsum.photos/id/271/339/509 (mer color surexpos�e)
+
+Archi
+https://picsum.photos/id/979/339/509
+https://picsum.photos/id/954/339/509
+https://picsum.photos/id/944/339/509 (pont perspect)
+
+BIG
+https://picsum.photos/id/744/2500/1667
+https://picsum.photos/id/174/
+https://picsum.photos/id/947/5616/3744 (Marou)
+
+******************************************************************************************************
+
+
+

@@ -1,0 +1,84 @@
+
+++++++++++++++++++++++++++++
++++ approche mobile first ++
+++++++++++++++++++++++++++++
+To explore first !
+https://www.anthedesign.fr/webdesign-2/mobile-first/
+https://www.ecrirepourleweb.com/mobile-first-approche-orientee-contenu/
+http://glossaire.infowebmaster.fr/mobile-first/
+https://www.solocal.com/blog/site-mobile-first
+search result
+https://www.google.com/search?q=mobile+first+css&sa=X&ved=2ahUKEwjY_taex8nkAhWRKVAKHc41AroQ1QIoA3oECAoQBA
+https://www.google.com/search?q=wireframe+mobile+first&sa=X&ved=2ahUKEwjY_taex8nkAhWRKVAKHc41AroQ1QIoB3oECAoQCA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+effet image
+http://www.wks.fr/blog/10-exemples-incroyables-deffets-de-survol-en-jquery-css3
+
+
+
+
+
+
+
+BORDER STYLE
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_border-style&preval=groove
+
+POLICE
+https://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+
+
+
+GOOGLE FONT
+https://www.w3schools.com/howto/howto_google_fonts.asp
+
+
+TUTO : SITE de r�f�rence en fran�ais
+https://www.alsacreations.com
+
+
+OUTIL : SITE G�N�RATEUR de CODE CSS pour les d�grad�s, les ombres, ...
+https://www.cssmatic.com/
+
+
+
+
+
+Bullet Journal
+http://madame.lefigaro.fr/societe/le-bullet-journal-pourquoi-ce-carnet-va-vous-changer-la-vie-180816-115872
+https://bulletjournal.com/pages/app
+
+
+
+D�FI CSS
+https://inani27.github.io/2019-html5-css3/www/CSS_liens_utiles.html
+
+
+
+
+
+
+
+https://cdn.pixabay.com/photo/2017/07/24/19/57/tiger-2535888_960_720.jpg 
+tigre
+
+demande Renaud
+css text align right (texte entourant l'image)
+
+bonus 
+accordion jQuery

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS - Liens utiles</title>
+        <style>   
+            ol.rectangle-list {
+                width: 49%;
+                display: flex;
+                text-transform: uppercase;
+            }
+            ol.rounded-list {
+                width: 69%;
+                text-transform: capitalize;
+            }
+            /*code{white-space: pre-wrap;}
+            span.smallcaps{font-variant: small-caps;}
+            span.underline{text-decoration: underline;}
+            div.column{display: inline-block; vertical-align: top; width: 50%;}*/
+
+
+            li a {
+                text-decoration: none;
+                color: #000;
+                display: block;
+
+                -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+                -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+                -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+                -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+                transition: font-size 0.3s ease, background-color 0.3s ease;
+            }
+
+            li a:hover {
+                font-size: 1.3em;
+                background-color: green;
+            }
+
+
+            /* src : https://red-team-design.developpez.com/tutoriels/css/style-listes-ordonnees/  */ 
+
+            ol{
+                counter-reset: li; /* Initialise le compteur */
+                list-style: none; /* Supprime la numérotation par défaut */
+                *list-style: decimal; /* Restitue la numérotation par défaut pour IE6/7 */
+                font: 15px 'trebuchet MS', 'lucida sans';
+                padding: 0;
+                margin-bottom: 4em;
+                text-shadow: 0 1px 0 rgba(255,255,255,.5);
+            }
+
+            ol ol{
+                margin: 0 0 0 3em; /* Ajoute une marge à gauche pour les listes imbriquées */
+            }
+
+
+            .rounded-list a{
+                position: relative;
+                display: block;
+                padding: .4em .4em .4em 2em;
+                *padding: .4em;
+                margin: .5em 0;
+                background: #ddd;
+                color: #444;
+                text-decoration: none;
+                border-radius: .3em;
+                transition: all .3s ease-out;
+            }
+
+            .rounded-list a:hover{
+                background: #eee;
+            }
+
+            .rounded-list a:hover:before{
+                transform: rotate(360deg);
+            }
+
+            .rounded-list a:before{
+                content: counter(li);
+                counter-increment: li;
+                position: absolute;
+                left: -1.3em;
+                top: 50%;
+                margin-top: -1.3em;
+                background: #87ceeb;
+                height: 2em;
+                width: 2em;
+                line-height: 2em;
+                border: .3em solid #fff;
+                text-align: center;
+                font-weight: bold;
+                border-radius: 2em;
+                transition: all .3s ease-out;
+            }
+
+            .rectangle-list a{
+                position: relative;
+                display: block;
+                padding: .4em .4em .4em .8em;
+                *padding: .4em;
+                margin: .5em 0 .5em 2.5em;
+                background: #ddd;
+                color: #444;
+                text-decoration: none;
+                transition: all .3s ease-out;
+            }
+
+            .rectangle-list a:hover{
+                background: #eee;
+            }       
+
+            .rectangle-list a:before{
+                content: counter(li);
+                counter-increment: li;
+                position: absolute;
+                left: -2.5em;
+                top: 50%;
+                margin-top: -1em;
+                background: #fa8072;
+                height: 2em;
+                width: 2em;
+                line-height: 2em;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .rectangle-list a:after{
+                position: absolute;
+                content: '';
+                border: .5em solid transparent;
+                left: -1em;
+                top: 50%;
+                margin-top: -.5em;
+                transition: all .3s ease-out;
+            }
+
+            .rectangle-list a:hover:after{
+                left: -.5em;
+                border-left-color: #fa8072;
+            }
+
+        </style>
+        <!--[if lt IE 9]>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <h2>Mémo css</h2>
+        <ol class="rounded-list">
+            <li>police
+                <ol>
+                    <li>Arial ; &nbsp; &nbsp; Arial Black ; &nbsp; &nbsp; Comic Sans MS ; &nbsp; &nbsp; Courier New ; &nbsp; &nbsp; Georgia ; &nbsp; &nbsp; Impact ; &nbsp; &nbsp; Times New Roman ; &nbsp; &nbsp; Trebuchet MS ; &nbsp; &nbsp; Verdana.</li>
+                    <li>
+                        <span class="citation" data-cites="font-face">@font-face</span>
+                        { &nbsp; &nbsp; font-family: ‘MaSuperPolice’; &nbsp; &nbsp; src: url(‘MaSuperPolice.eot’); }
+                        <ol>
+                            <li>dépréciée car impose&nbsp; à l’utilisateur de télécharger le fichier de police dans son navigateur IE !
+                                <ol>
+                                    <li><a target="_blank"  href="https://www.fontsquirrel.com/">https://www.fontsquirrel.com/</a></li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>lien
+                <ol>
+                    <li>pseudo-format (hover, link, active, visited et focus)</li>
+                </ol>
+            </li>
+            <li>border
+                <ol>
+                    <li>radius</li>
+                </ol></li>
+            <li>align
+                <ol>
+                    <li>block only no align on inline element !</li>
+                </ol>
+
+            </li>
+            <li>background
+                <ol>
+                    <li>image / attachement (fixed - scroll)</li>
+                    <li>position (top right, …)</li>
+                </ol>
+
+            </li>
+            <li>float / clear</li>
+            <li>shadow box/text</li>
+        </ol>
+
+        <h2>Liens utiles</h2>
+        <ol class="rectangle-list">
+            <li>selector
+                <ol>
+                    <li><a target="_blank"  href="https://css4-selectors.com/selectors/">https://css4-selectors.com/selectors/</a></li>
+					<li><a target="_blank"  href="https://www.w3schools.com/cssref/css_selectors.asp">https://www.w3schools.com/cssref/css_selectors.asp</a></li>
+                </ol>
+            </li>
+            <li>font
+                <ol>
+                    <li>Google fonts
+                        <ol>
+                            <li><a target="_blank"  href="https://www.w3schools.com/howto/howto_google_fonts.asp">https://www.w3schools.com/howto/howto_google_fonts.asp</a></li>
+                        </ol>
+                    </li>
+                    <li>famille
+                        <ol>
+                            <li><a target="_blank"  href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">https://www.w3schools.com/cssref/css_websafe_fonts.asp</a></li>
+                        </ol></li>
+                    <li>texte et caractère
+                        <ol>
+                            <li><a target="_blank"  href="http://www.css-faciles.com/proprietes-css-familles.php#texte">http://www.css-faciles.com/proprietes-css-familles.php#texte</a></li>
+                        </ol>
+                    </li>
+                    <li>taille : size
+                        <ol>
+                            <li><a target="_blank"  href="https://developer.mozilla.org/fr/docs/Web/CSS/font-size">https://developer.mozilla.org/fr/docs/Web/CSS/font-size</a></li>
+                            <li><a target="_blank"  href="https://www.w3schools.com/tags/ref_pxtoemconversion.asp">https://www.w3schools.com/tags/ref_pxtoemconversion.asp</a></li>
+                        </ol>
+                    </li>
+                    <li>gras / graisse : weight
+                        <ol>
+                            <li><a target="_blank"  href="https://developer.mozilla.org/fr/docs/Web/CSS/font-weight">https://developer.mozilla.org/fr/docs/Web/CSS/font-weight</a></li>
+                        </ol>
+                    </li>
+                    <li>direction
+                        <ol>
+                            <li><a target="_blank"  href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_direction&amp;preval=rtl">https://www.w3schools.com/cssref/playit.asp?filename=playcss_direction&amp;preval=rtl</a></li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+			<li>Fa Icon
+				<ol>
+					<li><a target="_blank"  href="
+					https://codepen.io/immad-hamid/pen/jVNvQO">
+					: codepen - Instagram gradient on hover</a>
+					</li>
+				</ol>
+			</li>
+            <li>les effets
+                <ol>
+                    <li>liens
+                        <ol>
+                            <li><a target="_blank"  href="https://codepen.io/brenden/pen/RNZXqx">https://codepen.io/brenden/pen/RNZXqx</a></li>
+                            <li><a target="_blank"  href="https://www.w3schools.com/css/css_link.asp">https://www.w3schools.com/css/css_link.asp</a></li>
+                        </ol>
+                    </li>
+
+					<li>CSSmatic : générateur de gradient, radius, shadow
+						<ol>
+							<li><a target="_blank"  href="https://www.cssmatic.com/">https://www.cssmatic.com/</a></li>
+							<li>gradient
+								<ol>
+									<li><a target="_blank"  href="https://www.w3schools.com/colors/colors_gradient.asp">https://www.w3schools.com/colors/colors_gradient.asp</a></li>
+									<li><a target="_blank"  href="https://codepen.io/leocampos/pen/pPwwNR">https://codepen.io/leocampos/pen/pPwwNR</a></li>
+									<li><a target="_blank"  href="https://cssgradient.io/">https://cssgradient.io/ </a></li>
+									
+								</ol>
+							</li>
+							<li>ombres
+								<ol>
+									<li>box-shadow
+										<ol>
+											<li><a target="_blank"  href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp">https://www.w3schools.com/cssref/css3_pr_box-shadow.asp</a></li>
+										</ol>
+									</li>
+								</ol>
+							</li>
+						</ol>
+					</li>
+					
+
+
+                    <li>Images de fond qui changent au scroll
+                        <ol> 
+                            <li><a target="_blank"  href="https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp">https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp</a></li>
+                        </ol>
+                    </li>
+
+
+                    <li>multiples images en fond
+                        <ol>
+						<li><a target="_blank"  href="https://www.w3schools.com/css/css3_backgrounds.asp">https://www.w3schools.com/css/css3_backgrounds.asp</a></li>
+                        </ol>
+                    </li	
+                </ol>
+            </li>
+            <li>Block &gt;&lt; inline
+                <ol>
+                    <li><a target="_blank"  href="http://www.css-faciles.com/bloc-en-ligne.php">http://www.css-faciles.com/bloc-en-ligne.php</a></li>
+                    <li><a target="_blank"  href="https://www.w3schools.com/html/html_blocks.asp">https://www.w3schools.com/html/html_blocks.asp</a></li>
+                </ol>
+            </li>
+            <li>CSS Properties
+                <ol>
+                    <li><a target="_blank"  href="https://www.w3schools.com/cssref/default.asp">https://www.w3schools.com/cssref/default.asp</a></li>
+                </ol>
+            </li>
+            <li>color
+                <ol>
+                    <li><a target="_blank"  href="http://www.css-faciles.com/proprietes-css-familles.php#couleur">http://www.css-faciles.com/proprietes-css-familles.php#couleur</a></li>
+                    <li><a target="_blank"  href="https://www.w3schools.com/colors/colors_names.asp">https://www.w3schools.com/colors/colors_names.asp</a></li>
+					<li><a target="_blank"  href="
+					https://www.computerhope.com/htmcolor.htm">
+					https://www.computerhope.com/htmcolor.htm</a></li>
+                </ol>
+            </li>
+            <li>border
+                <ol>
+                    <li><a target="_blank"  href="https://www.w3schools.com/cssref/css3_pr_border-radius.asp">https://www.w3schools.com/cssref/css3_pr_border-radius.asp</a></li>
+                </ol>
+            </li>
+            <li>list-style
+                <ol>
+                    <li><a target="_blank"  href="http://www.css-faciles.com/liste-proprietes/list-style.php">http://www.css-faciles.com/liste-proprietes/list-style.php</a></li>
+                    <li><a target="_blank"  href="https://www.w3schools.com/cssref/pr_list-style-type.asp">https://www.w3schools.com/cssref/pr_list-style-type.asp</a></li>
+                    <li><a target="_blank"  href="https://designshack.net/articles/css/5-simple-and-practical-css-list-styles-you-can-copy-and-paste/">css exemples</a></li>
+                    <li><a target="_blank"  href="https://red-team-design.developpez.com/tutoriels/css/style-listes-ordonnees/">Ajoutez du style à vos listes ordonnées  
+                        </a></li>
+                    <li><a target="_blank"  href="https://www.formget.com/css-lists/"> 
+                            Designing CSS Lists    
+                        </a></li>
+                </ol>
+            </li>
+
+            <li>browser support
+                <ol>
+                    <li><a target="_blank"  href="https://caniuse.com/">https://caniuse.com/</a></li>
+                </ol>
+            </li>
+            <li>EXERCICES
+                <ol>
+                    <li><a target="_blank"  href="https://www.w3schools.com/css/exercise.asp">https://www.w3schools.com/css/exercise.asp</a></li>
+                </ol>
+            </li>
+        </ol>
+
+    </body>
+</html>

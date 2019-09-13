@@ -1,0 +1,215 @@
+
+/* url game Flexbox Froggy : https://flexboxfroggy.com/#fr */
+/* 
++ tuto FR on 
+https://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
+*/
+
+/*propriété : justify-content 
+	L’alignement dans l’axe principal (horizontal) est traité via la propriété justify-content
+	valeurs:
+	
+    flex-start (éléments positionnés au début du sens de lecture, valeur par défaut)
+    flex-end (éléments positionnés à la fin)
+    center (position centrale)
+    space-between (répartition “justifiée”)
+    space-around (variante de répartition “justifiée”)
+
+*/
+
+
+container_hrz{
+/*1*/justify-content: flex-end;
+
+/*2*/justify-content: center;
+
+/*3*/justify-content: space-around ;
+
+/*4*/justify-content: space-between;
+
+}
+
+/*propriété : align-items
+	L’alignement dans l’axe secondaire (vertical) est géré avec align-items
+	valeurs:
+	
+    flex-start (au début)
+    flex-end (à la fin)
+    center (au centre)
+    baseline (généralement identique à flex-start)
+    stretch (étirés dans l’espace disponible, valeur par défaut)
+
+*/
+
+container_vert{
+/*5*/align-items: flex-end; 
+
+}
+
+container_diago{
+/*6*/
+justify-content: center;
+align-items: center; 
+
+
+/*7*/
+justify-content: space-around;
+align-items:end; 
+
+}
+
+
+/*propriété : flex-direction
+	définit la direction dans laquelle les éléments sont placés dans le conteneur
+	valeurs:
+	
+    row (distribution horizontale, valeur par défaut)
+    row-reverse (distribution horizontale inversée)
+    column (distribution verticale)
+    column-reverse (distribution verticale inversée)
+	
+*/
+
+container_dys{
+/*8*/
+flex-direction: row-reverse;
+
+/*9*/
+flex-direction: column;
+
+/*10*/
+flex-direction: row-reverse;
+justify-content: flex-end; /* en ligne inversée, lecture de droite à gauche */
+
+/*11*/
+flex-direction: column;
+justify-content: flex-end;
+
+/*12*/
+flex-direction: column-reverse;
+justify-content: space-between;
+
+
+/*13*/
+flex-direction: row-reverse;
+justify-content: center;
+align-items: end; 
+}
+
+
+/*propriété : order
+	Ordonnancement : réordonne l'ordre des éléments. 
+	Les valeurs de le propriété order agissent telles des pondérations : 
+	les éléments dont la valeur est la plus forte se trouveront en bas de la pile.
+	valeurs: de nb -1,1
+		
+*/
+container_ordre{
+/*14*/
+order: 1; /*le jaune doit être le + "lourd" , en bas de la pile */
+
+/*15*/
+order: -4; /*le rouge en position 4 doit être le + "léger" des 5, il doit donc "remonter" de 4 rang */
+
+}
+
+/*propriété : align-self
+	s'applique seulement à l'élément ciblé.
+	valeurs: 	idem align-items
+	
+	flex-start (au début)
+    flex-end (à la fin)
+    center (au centre)
+    baseline (généralement identique à flex-start)
+    stretch (étirés dans l’espace disponible, valeur par défaut)
+
+*/
+
+container_selfish{
+/*16*/
+align-self: flex-end;
+
+/*17*/
+order: 1; 
+align-self: flex-end;
+
+}
+
+/*propriété : flex-wrap
+	La propriété flex-wrap définit si le contenu sera distribué sur une seule ligne (ou colonne selon l’axe principal) ou sur plusieurs lignes. 
+	=> droit de passer à la ligne ou non.
+	valeurs: 	
+	
+	nowrap : Tous les éléments sont tenus sur une seule ligne.
+    wrap : Les éléments s'enveloppent sur plusieurs lignes au besoin.
+    wrap-reverse : Les éléments s'enveloppent sur plusieurs lignes dans l'ordre inversé.
+
+*/
+
+container_durum{
+/*18*/
+flex-wrap: wrap;
+
+/*19*/
+flex-direction: column;
+flex-wrap: wrap;
+
+/*20 */
+/* 2 propriété en une, valeur séparée par espace */
+/*Les deux propriétés flex-direction et flex-wrap sont utilisées tellement souvent ensembles que le raccourci flex-flow a été créé pour les combiner. */
+
+flex-flow: column wrap;
+}
+
+/*propriété : align-content
+	définit comment plusieurs lignes sont espacées de l'une à l'autre.
+	valeurs: 
+	
+	flex-start : Les lignes sont amassées dans le haut du conteneur.
+    flex-end: Les lignes sont amassées dans le bas du conteneur.
+    center : Les lignes sont amassées dans le centre vertical du conteneur.
+    space-between : Les lignes s'affichent avec un espace égal entre eux.
+    space-around : Les lignes s'affichent avec un espace égal autour d'eux.
+    stretch : Les lignes sont étirées pour s'adapter au conteneur.
+	
+*/
+
+container_aLigne{
+/*21*/
+align-content: flex-start; 
+
+/*22*/
+align-content: flex-end; 
+
+/*23*/
+flex-direction: column-reverse;
+align-content: center; 
+
+
+/*24*/
+flex-flow: column-reverse wrap-reverse;	/* wrap passe à la ligne les 2 jaunes; column place verticalement + reverse à chacun ,rouge en bas et jaune à gauche  */
+justify-content: center; 			/* centre verticalement */
+align-content: space-between; 		/*écarte les colonnes*/
+
+flex-flow: column-reverse wrap-reverse;	
+justify-content: center; 			
+align-content: space-between; 	
+
+}
+
+
+/* Tuto FR à tester : CSS Flexbox et l'alignement, guide complet: https://la-cascade.io/css-flexbox-et-lalignement-guide-complet/
+*/
+
+/* Infographie : https://jonibologna.com/blog/flexbox-cheatsheet */
+
+/* Maxime CSS + JS 
+responsive 11 boxes : http://jsfiddle.net/6e72oa7e/ 
+ un conteneur avec un display:flex; et un flex-flow:row wrap;, et à l'intérieur une liste d'un nombre indéterminé d’éléments, ayant tous la même taille, répartis sur plusieurs lignes, et occupant toute la largeur du conteneur (ayant donc un flex:1). 
+ Objectif : Faire en sorte que les éléments de la dernière ligne aient la même largeur que les éléments des lignes du dessus au lieu de s'agrandir et d'occuper toute la largeur de cette dernière ligne.
+
+*/
+
+
+
+
