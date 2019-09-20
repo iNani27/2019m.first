@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--
+part 1 - Structure without nav
+-->
+<html>
+    <head>
+        <title>sticky navigation - pure CSS - no JS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <style>
+            body{
+                margin : 0;
+                padding: 0;
+                font-family: sans serif;
+                background-color: #000;
+            }
+            header {
+                padding: 10px 100px;
+                box-sizing: border-box;
+            }
+            section{
+                width: 100%;
+                height: 100vh; /* */
+            }
+            section.sec1{
+                background: url(bg1.jpg);
+                background-size: cover;
+            }
+            section.sec2, section.sec4, section.sec6{
+                padding: 100px;
+                box-sizing: border-box;
+                height: auto;
+            }
+            section.sec2 h3, section.sec4 h3, section.sec6 h3{
+                font-size: 3em;
+                margin : 0;
+                padding: 0;
+                color: #fff;
+            }
+            section.sec2 p, section.sec6 p,  section.sec6 p a{
+                font-size: 1.4em;
+                margin : 0;
+                padding: 0;
+                color: #fff;  
+            }
+            section.sec4 ol, section.sec6 ol  {
+                font-size: 1.4em;
+                margin : 0;
+                padding: 0;
+                color: #fff;  
+            }
+            section.sec4 ol li a, section.sec6 ol li a {
+                font-size: 1.4em;
+                margin : 0;
+                padding: 0;
+                color: #fff;  
+            }
+            section.sec3{
+                background: url(bg3.jpg);
+                background-size: cover;
+            }
+            section.sec5{
+                background: url(bg5.jpg);
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <img src="logo.png" alt="logo">
+
+        </header>
+
+        <section class="sec1"></section>
+        <section class="sec2">
+            <h3>Exemple de Menu de Navigation "collant"</h3>
+
+            <p>The navbar will stick to the top when you reach its scroll position.</p>
+            <p><em>La barre de navigation restera en haut lorsque vous atteindrez sa position de défilement.</em></p>
+
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Du texte pour permettre le défilement... Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+        </section>
+        <section class="sec3"></section>
+        <section class="sec4" id="design">
+
+            <h3>Mobile first mockup inspiration</h3>
+            <ol>
+
+                <li><a href="https://consultants-formateurs-qualifies.org/">clic</a> </li> 
+                <li><a href="https://colorlib.com/preview/#ronaldo">clic</a> </li> 
+                <li><a href="http://sayadi.fouad.free.fr/">clic</a> </li> 
+                <li><a href="http://www.jeanpauljourdan.com/">clic</a> </li> 
+                <li><a href="https://www.thibautparent.com/">clic</a> </li> 
+                <li><a href="http://www.liliwol.fr/contact/">clic</a> </li> 
+                <li>
+                    <i><a href="https://consultants-formateurs-qualifies.org/martine-denimal/">clic</a> </i>
+                </li>
+
+                <li>
+                    <i><a href="http://www.guillaumepicard.eu/cv">clic</a> </i>
+                </li> 
+
+                <li>
+                    <b>
+                        <a href="https://www.jeromeherr.fr/" 
+                           title="over animé ! et même design tout appareil">clic</a> 
+                    </b>
+                </li>
+                <li>
+                    <a href="https://philippejarry.fr/web-reseaux-sociaux/
+                       " title="responsive? ">clic</a>
+                </li> 
+                <li>
+                    <i>
+                        <a href="http://www.silvere.tajan.net/fr/pag1-Curriculum-Vitae.html">clic</a> 
+                    </i>
+                </li> 
+                <li>
+                    <i>
+                        <a href="https://claude.help/support-et-assistance-informatique/" title="responsive? ">clic</a> 
+                    </i>
+                </li> 
+                <li>
+                    <b>
+                        <a href="https://colorlib.com/preview/#steve" title="color">clic</a>
+                    </b>
+                </li>
+                <li><i><a href="http://www.denis-sylvain.be/index.php/portfolio/cv/">clic</a></i> </li> 
+
+                <li>
+                    <b>
+                        <a href="https://www.jbfelix.be/" title="over animé !">clic</a>   
+                    </b> 
+                </li> 
+
+                <li>
+                    <i> 
+                        <a href="https://www.udemy.com/user/michelmartin2/ ">clic</a> 
+                    </i>
+                </li> 
+            </ol>
+        </section>
+        <section class="sec5"></section>
+        <section class="sec6" id="wix">
+            <h3>WIX</h3>
+            <p>
+                <a href="https://fr.wix.com/website/templates/html/portfolio-cv">WIX Galery</a>
+            </p>  
+            <ol>
+                <li><b>
+                        <a href="https://fr.wix.com/website-template/view/html/1919?siteId=44361882-aac5-4cb2-8393-a1d0bea73a57&metaSiteId=fb2a276e-da6d-4a21-925e-3af753a7a924&originUrl=">clic</a>
+
+
+                    </b> </li> 
+
+
+                <li><a href="https://fr.wix.com/website-template/view/html/1893?siteId=31c9cc64-4739-437a-bf99-8a87fae88840&metaSiteId=7df46866-884d-4ed2-a9ea-b6f80df2ebaf&originUrl=">clic</a> </li> 
+                <li><a href="https://fr.wix.com/website-template/view/html/1885?siteId=dc2a3605-d782-456d-b46a-9c1f726975bd&metaSiteId=65c9126c-4af6-4899-b621-554d1fad7a0c&originUrl=">clic</a> </li> 
+                <li><a href="https://fr.wix.com/website-template/view/html/1596?siteId=4cd71a91-ae37-4522-8619-d6fdb6b6f935&metaSiteId=db5c0b0a-b834-475d-8c07-5d5e45428e10&originUrl=">clic</a> </li>
+                <li>     <a href="https://fr.wix.com/website-template/view/html/1676?siteId=a2b2ea31-fa89-4af6-839a-0152c05a239e&metaSiteId=25696c7e-f948-43cc-a307-463d74bcc52d&originUrl=">clic</a></li>
+            </ol>
+
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Du texte pour permettre le défilement... Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        </section>
+
+        <!--
+        Credit image 
+        Image by <a href="https://pixabay.com/users/sasint-3639875/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1822614">Sasin Tipchai</a> 
+        -->
+
+    </body>
+</html>
