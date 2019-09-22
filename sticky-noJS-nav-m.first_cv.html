@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NANI Isabelle - CV</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="description" content="Isabelle NANI - Vous trouverez ici le site web présentant mes compétences HTML, CSS, Suite office  ">
+        <meta name="keywords" content="HTML,CSS,JQuery, Formation informatique, inclusion numérique, souris, clavier, windows, arborescence, fênetre, navigateur, mail, word, sens critique">
+        <meta name="author" content="NANI Isabelle">
+        <!-- Social media  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                margin : 0;
+                padding: 0;
+                font-family: sans serif;
+                background-color: #000;
+                color: #fff;
+                font-size: 16px;
+            }
+            header {
+                padding: 5px;
+                box-sizing: border-box;
+                text-align: center;  
+            }
+
+
+            section{
+                width: 100%;
+                height: 100vh; 
+            }
+            section.sec1{
+                background: url(img1_2.jpg);
+                background-size: cover;
+
+            }
+            section.sec3{
+                background: url(bg_3.jpg);
+                background-size: cover;
+            }
+            section.sec5{
+                background: url(img1_3.jpg);
+                background-size: cover;
+            }
+            section.sec2, section.sec4, section.sec6{
+                padding: 5px;
+                box-sizing: border-box;
+                height: auto;
+            }
+            h1{
+                font-size: 1.7em;
+            }
+            h2{
+                font-size: 2em;
+                margin: 50px 5px 20px 5px;
+            }
+            p, li{
+                font-size: 1.4em;
+            }
+            ul{
+                list-style-type: square;
+            }
+            blockquote{
+                font-size: 1.4em;
+                font-style: italic;
+            }
+
+            a {
+                font-size: 1.4em;
+                margin : 0;
+                padding: 0;
+                color: orangered;  
+            }
+
+            /* MENU */
+            nav{
+                width: 100%;
+                height:50px;
+                background: rgba(0,0,0,.8);
+                border-top: 1px solid rgba(255,255,255,.2);
+                border-bottom: 1px solid rgba(255,255,255,.2);
+                /* STICKY effect*/
+                position: sticky;
+                top: 0;
+            }
+            nav ul{
+                display: flex; 
+                margin : 0;
+                padding: 0;
+                float: right;
+            }
+            nav ul li{
+                list-style: none;
+            }
+            nav ul li a{
+                display: block;
+                color: #fff;
+                padding: 0 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;  
+                line-height: 50px; /*height de nav*/
+            }
+            nav ul li a.active, nav ul li a:hover{
+                background: orangered;
+            }
+
+
+            /* social media */
+            /* more on  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons */
+            .fa { 
+                padding: 20px;
+                font-size: 30px;
+                width: 50px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+            }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+            .fa-facebook {
+                background: #3B5998;
+                color: white;
+            }
+
+
+            .fa-linkedin {
+                background: #007bb5;
+                color: white;
+            }
+
+            p.center {
+                text-align: center;
+            }
+            
+             /* form */
+            form {
+                width: 400px;
+                margin: auto;
+                margin-top: 100px;
+            }
+            input{
+                border: 1px black solid;
+                border-radius: 15px;
+                padding: 14px;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                width: 200px;
+                margin: 10px;
+                display: block;
+            }
+            label{
+                width : 100px;
+                display:block;
+                float: left;
+            }
+            input[type=submit]{
+                background-color: greenyellow;
+                width: 400px;
+                text-align: center;
+                font-weight: bold;
+            }
+            input:focus {
+                border: 2px solid greenyellow;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <img src="logo_a.png" width="150" height="150" alt="logo">
+            <h1>Isabelle NANI</h1>
+            <h2>Formatrice informatique</h2>
+            <p>Passionnée, persévérante, créative</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#" class="active" title="Isabelle NANI - Formatrice informatique, passionnée">IN</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="sec1"></section>
+        <section class="sec2" id="cv">
+            <h2>Expérience</h2>
+            <blockquote>
+                Partager mon savoir et voir les apprenants devenir autonome numériquement m'apporte encore bien plus 
+                que de travailler en équipe à satisfaire des clients exigeants.
+            </blockquote>
+            <ul>
+                <li><strong>2016 - 2019</strong> : Formatrice encadrante à 
+                    <a href="http://fobagra.net/" target='_blank'>Fobagra
+                    </a>
+                </li>
+                <li><strong>2008 - 2014</strong> : Consultante informatique
+                    <a href=" https://intrasoft-intl.com" target='_blank'>
+                        Intrasoft
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
+        <section class="sec3"></section>
+        <section class="sec4">
+
+            <h2>Compétence</h2>
+            <ul>
+                <li>Suite office</li>
+                <li>HTML/CSS-SQL/PHP</li>
+            </ul>
+
+            <h2>Formation</h2>
+            <ul>
+                <li><strong>2015</strong> : Web developer <a href="https://www.cf2m.be" target='_blank'>CF2m</a></li>
+                <li><strong>2007</strong> : Web master <a href="https://www.interface3.be/" target='_blank'>Interface3</a></li>
+
+            </ul>
+        </section>
+        <section class="sec5"></section>
+        <section class="sec6" id="contact">
+       
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Restons en contact</legend>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" id="nom" required>
+                    <label for="prenom">Prénom</label>
+                    <input type="text" name="prenom" id="prenom">
+                    <label for="couriel">Mail</label>
+                    <input type="email" name="couriel" id="couriel">
+                    <label for="objet">Objet</label>
+                    <input type="text" name="objet" id="objet">
+                    <label for="objet">Message</label>
+                    <textarea></textarea>
+
+                </fieldset>
+                <input type="submit" value="Envoyer">
+            </form>
+
+
+
+            <p class="center">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="https://be.linkedin.com/in/it-nani" class="fa fa-linkedin"></a>
+
+            </p>
+        </section>
+
+        <!--
+        Credit 
+        Images from <a href="https://pixabay.com/">Pixabay</a> 
+        -->
+
+    </body>
+</html>

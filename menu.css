@@ -23,7 +23,7 @@ nav a:hover {
 
 /* Add an active class to highlight the current page */
 nav a.active {
-  background-color: #4CAF50;
+  background-color: orangered; /*#4CAF50;*/
   color: white;
 }
 
